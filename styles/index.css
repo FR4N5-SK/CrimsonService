@@ -1,0 +1,244 @@
+:root {
+    --rojoO: #73141B;
+    --rojoC: #F20505;
+    --rojoM: #F22738;
+    --negro: #0D0D0D;
+    --gris: #EBEBEB;
+    --blanco: #FFFFFF;
+}
+
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url('../assets/Banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.banner .background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .background .border_dark {
+    width: 90%;
+    height: 90%;
+    border: 2px solid var(--rojoO);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner .background .border_dark .content_banner {
+    width: 90%;
+    height: 90%;
+    border: 3px solid var(--rojoM);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    padding-left: 35px;
+}
+
+.color {
+    width: 30% !important;
+    background: rgba(235, 235, 235, .5);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_banner p {
+    width: 35%;
+    color: var(--negro);
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    padding-left: 25px;
+}
+.content_banner .buttons {
+    display: flex;
+    gap: 25px;
+    padding-left: 25px;
+}
+.buttons a{
+    text-decoration: none;
+    color: var(--blanco);
+    background: var(--rojoO);
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-size: 20px;
+    transition: .5s ease-out;
+}
+.buttons a:hover{
+    background: var(--negro);
+    transition: .5s ease-out;
+}
+
+.professionals{
+    height: 500px;
+    width: 100%;
+    background-color: var(--rojoO);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.professionals h3{
+    color: var(--blanco);
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+.cards .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    color: var(--blanco);
+}
+.info span{
+    font-size: 50px;
+}
+.info h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+.info p{
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+}
+
+.images {
+    height: 900px;
+    width: 100%;
+    background-color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.images h3 {
+    color: var(--negro);
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.galery {
+    width: 80%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.galery .galery_top{
+    width: 100%;
+    height: 125px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.galery .galery_bottom{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    gap: 50px;
+}
+.galery_bottom .bottom_left{
+    width: 65%;
+}
+.galery_bottom .bottom_right{
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+.galery_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--rojoO);
+    background: var(--rojoO);
+}
+
+.contract {
+    height: 600px;
+    width: 100%;
+    display: flex;
+}
+.hire_me{
+    background: var(--rojoO);
+    height: 100%;
+    width: 55%;
+    padding: 40px 160px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hire_me h3 {
+    font-size: 32px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: var(--blanco);
+    margin-bottom: 25px;
+}
+.hire_me p {
+    font-size: 22px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    color: var(--blanco);
+    margin-bottom: 15px;
+}
+.hire_me .buttons2{
+    margin-top: 40px;
+    display: flex;
+    gap: 60px;
+}
+.hire_me .buttons2 a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 20px;
+    font-family: "Ledger", serif;
+    font-weight: 400;
+    background: var(--negro);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: .5s ease-in-out;
+}
+.hire_me .buttons2 a:hover{
+    background-color: var(--blanco);
+    color: var(--negro);
+    transition: .5s ease-in-out;
+}
+
+.img_contract{
+    width: 45%;
+    height: 100%;
+    background: url('../assets/Profesional.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.img_contract div{
+    width: 100%;
+    height: 100%;
+    background: rgba(13, 13, 13, .5);
+}
